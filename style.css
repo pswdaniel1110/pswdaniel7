@@ -1,0 +1,121 @@
+/* 기본 설정 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    color: #333;
+  }
+  
+  /* 메인 컨테이너 */
+  main {
+    max-width: 700px;
+    margin: 50px auto;
+    background: white;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  /* 스텝 숨김 및 활성화 */
+  .step {
+    display: none;
+    animation: fadeIn 0.4s ease-in-out;
+  }
+  .step.active {
+    display: block;
+  }
+  
+  /* 제목 */
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2b3a42;
+    text-align: center;
+  }
+  
+  /* 옵션 버튼 */
+  button.option-btn {
+    width: 100%;
+    padding: 14px 20px;
+    margin: 10px 0;
+    font-size: 16px;
+    background: #ffffff;
+    border: 2px solid #4a90e2;
+    border-radius: 12px;
+    color: #4a90e2;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button.option-btn:hover {
+    background: #4a90e2;
+    color: white;
+    transform: scale(1.02);
+  }
+  
+  /* 결과 카드 */
+  .car-item {
+    background: #f9f9f9;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+  }
+  .car-item:hover {
+    transform: translateY(-4px);
+  }
+  
+  /* 차량 이미지 */
+  .car-item img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 12px;
+    margin-bottom: 12px;
+  }
+  
+  /* 다시하기 버튼 */
+  #restart-btn {
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 24px;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  #restart-btn:hover {
+    background: #ff3b3b;
+  }
+  
+  /* 애니메이션 */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* 반응형 */
+  @media (max-width: 600px) {
+    main {
+      padding: 30px 20px;
+    }
+  
+    button.option-btn {
+      font-size: 14px;
+      padding: 12px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  }
+  

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>자동차 추천</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <!-- 예산 선택 -->
+    <section id="step-budget" class="step active">
+      <h2>1. 예산을 선택하세요</h2>
+      <button class="option-btn" data-value="low">낮음</button>
+      <button class="option-btn" data-value="mid">중간</button>
+      <button class="option-btn" data-value="high">높음</button>
+      <button class="option-btn" data-value="premium">프리미엄</button>
+    </section>
+
+    <!-- 차체 선택 -->
+    <section id="step-bodyType" class="step">
+      <h2>2. 차체 유형을 선택하세요</h2>
+      <button class="option-btn" data-value="sedan">세단</button>
+      <button class="option-btn" data-value="suv">SUV</button>
+      <button class="option-btn" data-value="hatchback">해치백</button>
+      <button class="option-btn" data-value="coupe">쿠페</button>
+    </section>
+
+    <!-- 국가 선택 -->
+    <section id="step-country" class="step">
+      <h2>3. 제조 국가를 선택하세요</h2>
+      <button class="option-btn" data-value="korea">한국</button>
+      <button class="option-btn" data-value="japan">일본</button>
+      <button class="option-btn" data-value="usa">미국</button>
+      <button class="option-btn" data-value="germany">독일</button>
+    </section>
+
+    <!-- 결과 화면 -->
+    <section id="step-result" class="step">
+      <h2>추천 자동차</h2>
+      <div id="result-container"></div>
+      <button id="restart-btn">다시하기</button>
+    </section>
+  </main>
+
+  <script src="carDB.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+7
